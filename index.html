@@ -1,0 +1,91 @@
+<!DOCTYPE html>  
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NevesTV</title>
+
+    <!-- Link para a fonte Carter One do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    
+    <!-- Link para a fonte Noto Sans Math do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo para o header com a fonte Carter One e texto movido para cima */
+        header {
+            font-family: 'Carter One', sans-serif; /* Usando a fonte Carter One */
+            font-size: 5em; /* Tamanho grande da fonte */
+            position: absolute; /* Posiciona no canto superior esquerdo */
+            top: -10px; /* Mover o texto 10px para cima */
+            left: 10px; /* Distância da esquerda */
+            color: #FF6347; /* Cor do texto */
+        }
+
+        /* Estilo do corpo */
+        body {
+            font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
+            padding-top: 60px; /* Ajusta o conteúdo para não ficar coberto pelo header */
+            display: flex;
+            flex-direction: column; /* Organiza os vídeos em colunas */
+            align-items: center; /* Alinha os vídeos ao centro */
+        }
+
+        h1 {
+            font-family: 'Noto Sans Math', sans-serif; /* Usando a fonte Noto Sans Math */
+            font-size: 2em;
+            text-align: center;
+            width: 100%; /* Faz o título ocupar a largura total */
+        }
+
+        /* Estilo para o container dos vídeos */
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 vídeos por linha */
+            gap: 20px; /* Espaço entre os vídeos */
+            width: 90%; /* Largura do container */
+            max-width: 1200px; /* Limita a largura máxima */
+            margin-top: 30px; /* Espaçamento superior */
+        }
+
+        iframe {
+            width: 280px; /* Largura dos vídeos */
+            height: 158px; /* Altura proporcional para manter a boa qualidade */
+            border: none; /* Remove a borda do iframe */
+            object-fit: cover; /* Garante que o vídeo preencha a área sem distorcer a imagem */
+        }
+
+        /* Estilo para o link clicável */
+        a {
+            color: blue; /* Cor azul para o link */
+            text-decoration: underline; /* Adiciona sublinhado */
+            font-size: 1.2em; /* Tamanho do texto */
+            margin-top: 20px; /* Espaçamento superior */
+        }
+    </style>
+</head>
+<body>
+    <header>NevesTV</header>
+
+    <h1>De uma olhada, Sabemos que você não tem nada melhor para fazer</h1>
+
+    <!-- Container para os vídeos -->
+    <div class="video-container">
+        <!-- Vídeos -->
+        <iframe src="https://www.youtube.com/embed/sZ6eTrkfOEc" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/c5B8lDPjklE" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/uH4rWdgrA6c" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/slXl4wpYKLI" title="YouTube video player" allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/aHBCc3IW7MI" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/a99tqNoU1J0" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/HyszJFFGrrA" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <!-- Link clicável para o arquivo local -->
+    <a href="https://www.youtube.com/" target="_blank">
+         Acesse o youtube aqui
+    </a>
+</body>
+</html>
